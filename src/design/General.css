@@ -1,0 +1,22 @@
+.ant-card {
+  height: 550px;
+  margin: 1em;
+}
+.back-top {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  background-color: #1088e9;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+.loading {
+  text-align: center;
+  background: transparent;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  margin: 20px 0;
+}

@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// react
+import React, { Fragment } from "react";
+// third party
+import "antd/dist/antd.css";
+import { Switch, Route } from "react-router-dom";
+// custom
+import Navbar from "./components/Navbar";
+import General from "./components/General";
+import Bussiness from "./components/Bussiness";
+import Technology from "./components/Technology";
+import Sport from "./components/Sport";
+import More from "./components/More";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={General} />
+        <Route exact path="/bussiness/" component={Bussiness} />
+        <Route exact path="/technology/" component={Technology} />
+        <Route exact path="/sports/" component={Sport} />
+        <Route exact path="/more/" component={More} />
+      </Switch>
+    </Fragment>
   );
 }
 
